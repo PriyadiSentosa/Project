@@ -33,7 +33,7 @@
                     </div>
                      <div class="form-group">
                         <label for=""> Stok</label>
-                        <input type="number" name="harga" value="{{$barang->harga}}" class="form-control" readonly>
+                        <input type="text" name="harga" value="{{$barang->harga}}" class="form-control" readonly>
 
                     </div>
                     <div class="form-group">

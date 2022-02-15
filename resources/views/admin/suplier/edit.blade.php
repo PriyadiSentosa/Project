@@ -18,32 +18,33 @@
             <div class="card">
                 <div class="card-header">Data Supplier</div>
                 <div class="card-body">
-                    <form action="{{route('suplier.update',$suplier->id)}}" method="post">
+                   <form action="{{route('suplier.update',$suplier->id)}}" method="post">
                         @csrf
                         @method('put')
                         <div class="form-group">
                             <label for="">Masukan Nama Supplier</label>
-                            <input type="text" name="nama" value="{{$suplier->name}}" class="form-control @error('nama') is-invalid @enderror">
-                            @error('suplier')
+                            <input type="text" name="nama" value="{{$suplier->nama}}" class="form-control @error('nama') is-invalid @enderror">
+                             @error('nama')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="">Masukan Alamat</label>
-                            <input type="text" name="alamat" value="{{$suplier->name}}" class="form-control @error('alamat') is-invalid @enderror">
-                            @error('suplier')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
+                            <label for="">Masukan Alamat Supplier</label>
+                            <input type="text" name="alamat" value="{{$suplier->alamat}}" class="form-control @error('alamat') is-invalid @enderror">
+                            @error('alamat')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
                             @enderror
                         </div>
+
                         <div class="form-group">
                             <button type="reset" class="btn btn-outline-warning">Reset</button>
                             <button type="submit" class="btn btn-outline-primary">Simpan</button>
                         </div>
-                    </form>
+                   </form>
                 </div>
             </div>
         </div>

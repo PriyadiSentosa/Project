@@ -33,9 +33,9 @@
                                     <tr>
                                         <td>Stok</td>
                                         <td>:</td>
-                                        <td>{{ number_format($barang->stok) }}</td>
+                                        <td>{{ $barang->stok }}</td>
                                     </tr>
-                                   
+
                                     <tr>
                                         <td>Jumlah Pesan</td>
                                         <td>:</td>
@@ -46,7 +46,7 @@
                                                 <button type="submit" class="btn btn-primary mt-2"><i class="fa fa-shopping-cart"></i> Masukkan Keranjang</button>
                                             </form>
                                         </td>
-                                    </tr>                
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>

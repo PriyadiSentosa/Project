@@ -17,7 +17,7 @@ class CreateBarangsTable extends Migration
             $table->id();
             $table->string('nama_barang');
             $table->integer('harga')->unsigned;
-            $table->integer('stok')->unsigned;
+            $table->string('stok')->nullable;
             $table->bigInteger('suplier_id')->unsigned();
             $table->string('cover')->nullable;
 

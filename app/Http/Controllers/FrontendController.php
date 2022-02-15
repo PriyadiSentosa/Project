@@ -7,6 +7,7 @@ use App\Models\barang;
 class FrontendController extends Controller
 {
     //
+
     public function index()
     {
         $barang = Barang::all();
@@ -18,4 +19,5 @@ class FrontendController extends Controller
         $barang = Barang::findOrFaill($id);
         return view('layouts.frontend', compact('barang'));
     }
+
 }

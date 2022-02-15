@@ -1,4 +1,4 @@
-{{-- @extends('layouts.admin')
+{{-- {{-- @extends('layouts.admin')
 @section('header')
 <div class="content-header">
     <div class="container-fluid">
@@ -136,7 +136,7 @@
                         </div>
                          <div class="form-group">
                             <label for="">Masukan Stok Barang</label>
-                            <input type="number" name="stok" class="form-control @error('stok') is-invalid @enderror">
+                            <input type="text" name="stok" class="form-control @error('stok') is-invalid @enderror">
                              @error('stok')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -164,4 +164,4 @@
     </div>
 </div>
 @endsection
-
+ --}}

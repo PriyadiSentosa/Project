@@ -3,14 +3,16 @@
 <div class="content-header">
     <div class="container-fluid">
         <div class="card-header">
-            <center>  <h3 class="m-2"><b><i>Data Supplier</i></b></h3></center>
+            <center>
+                <h3 class="m-2"><b><i>Data Supplier</i></b></h3>
+            </center>
         </div>
     </div>
 </div>
 @endsection
 
 @section('js')
-   
+
 @endsection
 
 @section('content')
@@ -24,22 +26,24 @@
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
-                    <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Nomor</th>
-                            <th>Nama Supplier</th>
-                            <th>Alamat</th>
-                            <th><center>Aksi</center></th>
-                        </tr>
-                    </thead>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Nomor</th>
+                                    <th>Nama Supplier</th>
+                                    <th>Alamat</th>
+                                    <th>
+                                        <center>Aksi</center>
+                                    </th>
+                                </tr>
+                            </thead>
                             @php $no=1; @endphp
                             @foreach($suplier as $data)
                             <tr>
-                               <th>{{$no++}}</th>
-                               <th>{{$data->nama}}</th>
-                               <th>{{$data->alamat}}</th>
-                               <th>
+                                <th>{{$no++}}</th>
+                                <th>{{$data->nama}}</th>
+                                <th>{{$data->alamat}}</th>
+                                <th>
                                     <form action="{{route('suplier.destroy',$data->id)}}" method="post">
                                         @method('delete')
                                         @csrf

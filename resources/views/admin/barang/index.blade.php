@@ -41,7 +41,8 @@
                                 <th>{{$no++}}</th>
                                 <th>{{$data->suplier->nama}}</th>
                                 <th>{{$data->nama_barang}}</th>
-                                <th>{{$data->harga}}</th>
+                                <th>Rp .{{ number_format($data->harga)}}</th>
+
                                 <th>{{$data->stok}}</th>
                                 <th><img src="{{$data->image()}}" alt="" style="width:100px; height:100px;" alt="cover"></th></td>
                                <th>
