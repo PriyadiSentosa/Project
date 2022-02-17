@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Alert;
 use App\Models\barang;
-use App\Models\PesananDetail;
 use App\Models\suplier;
 use Illuminate\Http\Request;
 

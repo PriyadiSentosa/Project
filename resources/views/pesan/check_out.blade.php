@@ -40,7 +40,7 @@
                                     <img src="{{$pesanan_detail->barang->image()}}" alt=""  class="card-img-top" style="width:20%;" alt="cover">
                                 </td>
                                 <td>{{ $pesanan_detail->barang->nama_barang }}</td>
-                                <td>{{ $pesanan_detail->jumlah }} buah</td>
+                                <td>{{ $pesanan_detail->jumlah }} Unit</td>
                                 <td align="right">Rp. {{ number_format($pesanan_detail->barang->harga) }}</td>
                                 <td align="right">Rp. {{ number_format($pesanan_detail->jumlah_harga) }}</td>
                                 <td>

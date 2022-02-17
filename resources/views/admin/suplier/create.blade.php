@@ -30,14 +30,15 @@
                             @enderror
                         </div>
                          <div class="form-group">
-                            <label for="">Masukan Alamat</label>
-                            <input type="text" name="alamat" class="form-control @error('alamat') is-invalid @enderror">
-                            @error('alamat')
+                             <label for="">Alamat</label>
+                             <textarea name="alamat" class="form-control @error('alamat') is-invalid @enderror" id="" cols="30" rows="5">
+                                @error('alamat')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                             @enderror
-                        </div>
+                        </textarea>
+                         </div>
                         <div class="form-group">
                             <button type="reset" class="btn btn-outline-warning">Reset</button>
                             <button type="submit" class="btn btn-outline-primary">Simpan</button>

@@ -192,7 +192,7 @@
 									<strong>Harga :
 									</strong> Rp. {{ number_format ($data->harga)}} <br>
 									<Strong>Stok :
-									</strong>{{ $data->stok }} <br>
+									</strong>{{ $data->stok }} Unit <br>
 									<hr>
 								</p>
 								<a href="{{ url('pesan') }}/{{ $data->id }}" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Pesan</a>

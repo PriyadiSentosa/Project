@@ -43,7 +43,7 @@
                                 <th>{{$data->nama_barang}}</th>
                                 <th>Rp .{{ number_format($data->harga)}}</th>
 
-                                <th>{{$data->stok}}</th>
+                                <th>{{$data->stok}} Unit</th>
                                 <th><img src="{{$data->image()}}" alt="" style="width:100px; height:100px;" alt="cover"></th></td>
                                <th>
                                     <form action="{{route('barang.destroy',$data->id)}}" method="post">

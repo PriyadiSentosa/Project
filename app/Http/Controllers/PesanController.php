@@ -31,7 +31,7 @@ class PesanController extends Controller
         $tanggal = Carbon::now();
 
         //validasi apakah melebihi stok
-        if ($request->jumlah_pesan > $barang->stok -= 1) {
+        if ($request->jumlah_pesan > $barang->stok) {
             return redirect('pesan/' . $id);
         }
 
@@ -88,7 +88,6 @@ class PesanController extends Controller
             $pesanan_details = PesananDetail::where('pesanan_id', $pesanan->id)->get();
 
         }
-
         return view('pesan.check_out', compact('pesanan', 'pesanan_details'));
     }
 
