@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Alert;
 use App\Models\barang;
 use App\Models\suplier;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class BarangController extends Controller
 {

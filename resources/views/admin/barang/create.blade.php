@@ -16,7 +16,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Data Barang</div>
+
                 <div class="card-body">
                     <form action="{{route('barang.store')}}" method="post" enctype="multipart/form-data">
                         @csrf
