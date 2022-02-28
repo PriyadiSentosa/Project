@@ -33,7 +33,7 @@
                                     <tr>
                                         <td>Stok</td>
                                         <td>:</td>
-                                        <td>{{ $barang->stok }}</td>
+                                        <td>{{ $barang->stok }} Units</td>
                                     </tr>
 
                                     <tr>

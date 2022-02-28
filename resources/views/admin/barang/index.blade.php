@@ -64,7 +64,7 @@
                     <td class="text-center">{{$data->suplier->nama}}</td>
                     <td class="text-center">{{$data->nama_barang}}</td>
                     <td class="text-center">{{$data->harga}}</td>
-                    <td class="text-center">{{$data->stok}}</td>
+                    <td class="text-center">{{$data->stok}} Units</td>
                     <td class="text-center"><img src="{{$data->image()}}" alt="" style="width:100px; height:100px;" alt="cover"></td>
 
                     <td>

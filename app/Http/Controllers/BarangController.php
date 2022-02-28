@@ -73,7 +73,7 @@ class BarangController extends Controller
         }
         $barang->stok = $request->stok;
         $barang->save();
-        Alert::success('Success Title', 'Success Message');
+        Alert::success('Sukses Menambah Data Barang', 'Success');
         return redirect()->route('barang.index');
 
     }

@@ -9,6 +9,7 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class RegisterController extends Controller
 {
@@ -72,6 +73,7 @@ class RegisterController extends Controller
         ]);
         $memberRole = Role::where('name', 'member')->first();
         $user->attachRole($memberRole);
+        Alert::success('Sukses Register', 'Success');
         return $user;
     }
 }

@@ -16,7 +16,7 @@
         </div>
     </form>
     <ul class="nav menu">
-        <li><a href="{{route('index')}}"><em class="fa fa-dashboard color-blue">&nbsp;</em><b> Dashboard</b></a></li>
+        <li><a href="/admin"><em class="fa fa-dashboard color-blue">&nbsp;</em><b> Dashboard</b></a></li>
         <li><a href="{{route('suplier.index')}}"><em class="fa fa-users color-blue">&nbsp;</em><b> Supplier </b></a></li>
          <li><a href="{{route('barang.index')}}"><em class="fa fa-archive color-blue">&nbsp;</em><b> Barang </b></a></li>
     </ul>

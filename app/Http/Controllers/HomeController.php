@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\barang;
+
 class HomeController extends Controller
 {
     /**
@@ -21,6 +23,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+        $barang = Barang::all();
+        return view('layouts.frontend', compact('barang'));
+    }
+
+    public function show($id)
+    {
+        $barang = Barang::findOrFaill($id);
+        return view('layouts.frontend', compact('barang'));
     }
 }

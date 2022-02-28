@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Alert;
 use App\Models\Barang;
 use App\Models\Pesanan;
 use App\Models\PesananDetail;
@@ -10,6 +9,7 @@ use App\Models\User;
 use Auth;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class PesanController extends Controller
 {

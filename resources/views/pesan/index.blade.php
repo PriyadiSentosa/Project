@@ -33,7 +33,7 @@
                                     <tr>
                                         <td>Stok</td>
                                         <td>:</td>
-                                        <td>{{ $barang->stok }}</td>
+                                        <td>{{ $barang->stok }} Units</td>
                                     </tr>
 
                                     <tr>
@@ -42,7 +42,7 @@
                                         <td>
                                              <form method="post" action="{{ url('pesan') }}/{{ $barang->id }}" >
                                             @csrf
-                                                <input type="text" name="jumlah_pesan" class="form-control" required="">
+                                                <input type="number" name="jumlah_pesan" class="form-control" required="">
                                                 <button type="submit" class="btn btn-primary mt-2"><i class="fa fa-shopping-cart"></i> Masukkan Keranjang</button>
                                             </form>
                                         </td>

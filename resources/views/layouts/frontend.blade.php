@@ -378,5 +378,10 @@
 	<script src="{{asset('frontend/assets/js/sticker.js')}}"></script>
 	<!-- main js -->
 	<script src="{{asset('frontend/assets/js/main.js')}}"></script>
+
+     @include('sweetalert::alert')
+     <script src="{{asset('js/sweetalert2.js')}}"></script>
+     <script src="{{asset('js/delete.js')}}"></script>
+
 </body>
 </html>

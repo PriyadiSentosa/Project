@@ -51,7 +51,7 @@ class SuplierController extends Controller
         $suplier->nama = $request->nama;
         $suplier->alamat = $request->alamat;
         $suplier->save();
-        Alert::success('Sukses Menambah Data', 'Sukses');
+        Alert::success('Sukses Menambah Data Supplier', 'Sukses');
         return redirect()->route('suplier.index');
 
     }
